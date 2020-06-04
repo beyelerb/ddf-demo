@@ -19,12 +19,12 @@
         <artifactId>ddf-demo</artifactId>
         <version>2.23.0</version>
     </parent>
-    <groupId>org.codice.ddf.ddfdemo</groupId>
-    <artifactId>ddfdemo</artifactId>
+    <groupId>org.codice.ddf.ddf-demo</groupId>
+    <artifactId>ddf-demo</artifactId>
     <name>DDF Demo :: Distribution</name>
     <packaging>pom</packaging>
     <properties>
-        <ddfdemo.assembly.path>${project.build.directory}/assemblies/ddf-${project.version}</ddfdemo.assembly.path>
+        <ddf-demo.assembly.path>${project.build.directory}/assemblies/ddf-${project.version}</ddf-demo.assembly.path>
     </properties>
     <dependencies>
         <dependency>
@@ -35,7 +35,7 @@
         </dependency>
         <!--
         <dependency>
-            <groupId>org.codice.ddf.ddfdemo.distribution</groupId>
+            <groupId>org.codice.ddf.ddf-demo.distribution</groupId>
             <artifactId>common</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
@@ -106,7 +106,7 @@
                                 <descriptor>mvn:org.codice.ddf.search/intrigue-ui-app/${ddf.ui.version}/xml/features</descriptor>
                                 <descriptor>mvn:org.codice.ddf.search/ui-frontend/${ddf.ui.version}/xml/features</descriptor>
                             </descriptors>
-                            <repository>${ddfdemo.assembly.path}/system</repository>
+                            <repository>${ddf-demo.assembly.path}/system</repository>
                         </configuration>
                     </execution>
                 </executions>
@@ -170,7 +170,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${ddfdemo.assembly.path}</outputDirectory>
+                            <outputDirectory>${ddf-demo.assembly.path}</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${project.basedir}/src/main/filtered-resources</directory>

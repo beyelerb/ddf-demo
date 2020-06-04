@@ -24,7 +24,7 @@
         <!-- Expanded DDF Standard Distribution -->
         <fileSet>
             <outputDirectory>/</outputDirectory>
-            <directory>${ddfdemo.assembly.path}</directory>
+            <directory>${ddf-demo.assembly.path}</directory>
             <includes>
                 <include>**/*</include>
             </includes>
